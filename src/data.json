@@ -1,0 +1,102 @@
+{
+  "Users": [
+    {
+      "id": 1,
+      "img": "jessica",
+      "name": "Jessica P.",
+      "description": "Skeptical Newcomer",
+      "comment": "I was initially hesitant about online betting, but Bet On It has put my mind at ease. Their secure platform and transparent fees make me feel comfortable. It's been a positive experience overall."
+    },
+    {
+      "id": 2,
+      "img": "michael",
+      "name": "Michael K.",
+      "description": "Tech Savvy Millennial",
+      "comment": "The Bet On It app is amazing! It's sleek, intuitive, and makes betting on the go a breeze. Plus, the social media integration allows me to see what my friends are up to and even challenge them to a friendly wager."
+    },
+    {
+      "id": 3,
+      "img": "emily",
+      "name": "Emily C.",
+      "description": "Casual Sports Fan",
+      "comment": "I never thought sports betting could be so much fun! Bet On It's user-friendly platform makes it easy to learn the ropes, and I love competing in low-stakes games to test my knowledge. It's a great way to add some extra excitement to watching the games."
+    },
+    {
+      "id": 4,
+      "img": "william",
+      "name": "William H.",
+      "description": "Weekend Sports Watcher",
+      "comment": "Bet On It has rekindled my love for watching sports. Now, every game has the potential to be exciting, even if my favorite team isn't playing. I love the feeling of competing with others who share my passion."
+    },
+    {
+      "id": 5,
+      "img": "sarah",
+      "name": "Sarah M.",
+      "description": "College Football Fan",
+      "comment": "Bet On It has completely changed the way I experience sports! I love the competition and camaraderie of going head-to-head with friends and other fans. Plus, the lower fees mean I can actually win big without breaking the bank."
+    },
+    {
+      "id": 6,
+      "img": "john",
+      "name": "John T.",
+      "description": "Fantasy Sports Enthusiast",
+      "comment": "Bet On It feels like the perfect evolution of fantasy sports. It combines the strategic planning with the thrill of real money wagering. Plus, the ability to customize my own competitions adds a whole new level of fun."
+    }
+  ],
+  "Features": [
+    {
+      "id": 1,
+      "icon": "peer-to-peer",
+      "title": "Peer-to-Peer System",
+      "description": "Forget the house edge! Bet On It connects you directly with other users, allowing you to wager against each other and keep more of your winnings."
+    },
+    {
+      "id": 2,
+      "icon": "dollar-icon",
+      "title": "Lower Fees",
+      "description": "We take a minimal service fee, so you can focus on maximizing your profits. Traditional sportsbooks can't compete with our competitive pricing model."
+    },
+    {
+      "id": 3,
+      "icon": "sword-icon",
+      "title": "Social Competitions",
+      "description": "Challenge your friends, family, or fellow sports fans to head-to-head competitions.  Create your own custom leagues or join existing ones for endless possibilities."
+    },
+    {
+      "id": 4,
+      "icon": "mobile-icon",
+      "title": "User-Friendly Platform",
+      "description": "Our intuitive app and website are designed for ease of use. Whether you're a seasoned bettor or a curious newcomer, you'll be navigating the platform like a pro in no time."
+    }
+  ],
+  "AboutUsFeatures": [
+    {
+      "id": 1,
+      "icon": "community",
+      "title": "Community Forum",
+      "img": "cheering-illustration",
+      "description": "Our community forum functions as a dynamic social space where users can engage with one another, share wagers, discuss ideas, and post insights. Much like a social media feed, users will see content from those they follow, facilitating personalized interactions and discussions."
+    },
+    {
+      "id": 2,
+      "icon": "dollar-bag",
+      "title": "Wager Pool",
+      "img": "playing-cards-illustration",
+      "description": "Our community forum functions as a dynamic social space where users can engage with one another, share wagers, discuss ideas, and post insights. Much like a social media feed, users will see content from those they follow, facilitating personalized interactions and discussions."
+    },
+    {
+      "id": 3,
+      "icon": "star-icon",
+      "title": "Private Clubs",
+      "img": "playing-board-game-illustration",
+      "description": "Bet On It offers the ability to create or join private clubs, enabling friendly competitions among friends and family. Each competition will have a set buy-in and specific parameters such as wager tokens, sports, duration, and revenue splits. Operating similarly to fantasy sports leagues, these clubs provide a new and exciting way to wager competitively. Clubs will use a point system based on traditional betting odds."
+    },
+    {
+      "id": 4,
+      "icon": "target",
+      "title": "Mission",
+      "img": "targeting-illustration",
+      "description": "Ultimately,Our goal for Bet On It is to transform the betting experience by enhancing social engagement, fostering a fair and transparent environment, and ensuring accessibility for all users, regardless of their bankroll or experience. We are committed to taking back power from traditional sportsbooks and placing the user at the center of our platform. To demonstrate this commitment, we are initially offering a 0% fee on all wagers. While we may eventually introduce a modest 1% transaction fee or incorporate advertisements to support the development and upkeep of the application and brand image/development, our priority remains to provide an exceptional, user-focused betting experience."
+    }
+  ]
+}
