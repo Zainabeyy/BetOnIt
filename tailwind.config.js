@@ -56,11 +56,7 @@ export default {
         extraLarge:'4rem',
         xxs:'0.625rem'
       }
-    },
-    transitionProperty:{
-      'maxHeight':'max-height',
-      'transform':'transform'
-    },
+    }
   },
   plugins: [],
 }

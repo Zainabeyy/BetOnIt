@@ -7,8 +7,9 @@ export default function Faqs() {
   const faqsDataEl = faqsData.map((data) => {
     const secId = nanoid();
     const faqSec = data.data.map((item) => {
+      const accordId=nanoid();
       return (
-        <Accordian items={item}/>
+        <Accordian key={accordId} items={item}/>
       );
     });
     return (
