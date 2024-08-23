@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer>
       <div className="containerPadding bg-black-dark py-10">
-        <div className="md:grid md:grid-rows-3 md:grid-flow-col md:h-28 text-xs font-medium text-transWhite-medium flex flex-col space-y-2">
+        <div className="md:grid md:grid-rows-3 md:grid-flow-col md:h-28 text-xs font-medium text-transWhite-medium flex flex-col space-y-4">
           <a href="/">
             <img
-              src="../../Logo.png"
+              src="../../Logo.svg"
               alt="logo"
               className="w-[5.5rem]"
             />
@@ -25,8 +27,8 @@ export default function Footer() {
             </a>
           </div>
           <div className="line"></div>
-          <a href="/aboutUs">About Us</a>
-          <a href="/faqs">FAQs</a>
+          <Link to="/aboutUs">About Us</Link>
+          <Link to="/faqs">FAQs</Link>
           <a href="#">Contact Us</a>
           <div className="line"></div>
           <a href="#">Terms & Conditions</a>

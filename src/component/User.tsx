@@ -7,7 +7,7 @@ export default function Users() {
     return (
       <div
         key={user.id}
-        className="py-6 text-center min-w-80 h-80 bg-black-dark rounded-2xl mx-5"
+        className="py-6 text-center max-h-96 bg-black-dark rounded-2xl mx-5"
       >
         <img
           src={`../../home/users/${user.img}.png`}
@@ -20,13 +20,13 @@ export default function Users() {
             {user.description}
           </p>
         </div>
-        <div className="bg-green-bright min-h-32 pt-6 px-10 relative rounded-2xl">
+        <div className="bg-green-bright min-h-36 pb-3 pt-6 px-5 md:px-10 relative rounded-2xl">
           <img
-            src="../../users/qutation.png"
+            src="../../home/users/qutation.png"
             alt="icon"
             className="absolute top-4 left-7"
           />
-          <p className="text-black-dark text-xxs align-text-top break-word">
+          <p className="text-black-dark text-xxs align-text-top break-word w-[42ch]">
             {user.comment}
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function Users() {
   });
   return (
     <div className="my-8 overflow-hidden">
-      <h2 className="containerPadding uppercase text-2xl font-black italic text-green-darkest">
+      <h2 className="containerPadding uppercase text-xl md:text-2xl font-black italic text-green-darkest">
         What our users are saying...
       </h2>
       <div className="flex flex-nowrap slide">

@@ -13,8 +13,8 @@ export default function Faqs() {
       );
     });
     return (
-      <div key={secId} className="my-16">
-        <h2 className="text-[#414141] font-black italic text-xl mb-8 uppercase">
+      <div key={secId} className="my-9 md:my-16">
+        <h2 className="text-[#414141] font-black italic text-lg md:text-xl mb-8 uppercase">
           {data.name}
         </h2>
         <div>{faqSec}</div>
@@ -22,8 +22,8 @@ export default function Faqs() {
     );
   });
   return (
-    <main className="containerPadding bg-black-darkest py-16 text-white">
-      <h1 className="title w-auto">Frequently asked questions</h1>
+    <main className="containerPadding bg-black-darkest py-12 md:py-16 text-white">
+      <h1 className="title">Frequently asked questions</h1>
       <div>{faqsDataEl}</div>
     </main>
   );

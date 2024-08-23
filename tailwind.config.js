@@ -12,19 +12,14 @@ export default {
           '0%': { transform: 'translate(0)' },
           '100%': { transform: 'translate(-100%)' },
         },
-        rotate:{
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(180deg)' }
-        },
-        rotateReverse:{
-          "0%":{ transform: 'rotate(180deg)' },
-          "100%":{ transform: 'rotate(0deg)' },
+        fade:{
+          '0%': { opacity: '0' , transform:'translatex(-4%)'},
+          '100%': { opacity: 1 ,transform:'translateX(0)'},
         }
     },
     animation:{
       slide:'slide 10s infinite linear',
-      rotate:'rotate 0.5s ease-in',
-      rotateReverse:'rotateReverse 0.5s ease-in',
+      fade:'fade 1s linear',
     },
     extend: {
       fontFamily:{
