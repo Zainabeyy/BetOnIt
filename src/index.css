@@ -45,6 +45,24 @@
     @apply rotate-180 ;
   }
 
+  /* crm page desiging */
+
+  label:has(input[type='text']:focus){
+    @apply outline-2 outline outline-white/80
+  }
+  .table-heading th{
+    @apply px-4 pb-2 pt-5 text-left border-2 border-black-darkest font-semibold text-white/80 pl-5
+  }
+  .table-data td{
+    @apply p-3 text-left border-2 border-black-darkest bg-black-dark text-white/80 font-light pl-5
+  }
+  .table-data td:first-child{
+    @apply w-[15%]
+  }
+  .number{
+    @apply text-5xl text-white/80 mb-5;
+  }
+
   @screen sm{
     body{
       @apply text-base;
