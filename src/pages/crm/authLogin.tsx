@@ -79,7 +79,7 @@ export default function AuthLogin() {
     <div className="flex justify-center items-center min-h-screen bg-black-dark/30">
       <div className="bg-black-darkest container-sm containerPadding py-8 rounded-3xl">
         <img
-          src="../../public/Logo.svg"
+          src="../../Logo.svg"
           alt="logo"
           className="w-40 h- mx-auto"
         />
