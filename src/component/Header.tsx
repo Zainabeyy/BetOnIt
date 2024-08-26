@@ -7,10 +7,12 @@ import {
   push,
   query,
   ref,
+  set,
 } from "firebase/database";
 import moment from "moment";
 
 type EmailData = {
+  id: number;
   email: string;
   date: string;
 };
@@ -18,20 +20,30 @@ type EmailData = {
 export default function Header() {
   const [email, setEmail] = useState("");
   const [emailData, setEmailData] = useState<EmailData>({
+    id: 0,
     email: "",
     date: "",
   });
 
+  // update the email 
+
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     setEmail(e.target.value);
   }
-  
+
+  // update the email data 
+
   React.useEffect(() => {
-    setEmailData({
-      email: email,
-      date: moment().format("L"),
+    setEmailData((prevData) => {
+      return {
+        ...prevData,
+        email: email,
+        date: moment().format("L"),
+      };
     });
   }, [email]);
+
+  // functuion to send the email data to firebase  
 
   async function submitEmail() {
     if (!email) {
@@ -39,6 +51,8 @@ export default function Header() {
     }
 
     try {
+
+      // prevent the data from duplicate 
       const databaseRef = ref(database, "emails");
       const emailQuery = query(
         databaseRef,
@@ -49,7 +63,16 @@ export default function Header() {
       if (snapshot.exists()) {
         alert("This email already exists.");
       } else {
-        await push(databaseRef, emailData);
+
+        // creating the variable to store id 
+
+        const idRef = ref(database, "emailIdCounter");
+        const idSnapshot = await get(idRef);
+        let newId = 1;
+        if (idSnapshot.exists()) [(newId = idSnapshot.val() + 1)];
+        await set(idRef, newId);
+        const newEmailData = { ...emailData, id: newId };
+        await push(databaseRef, newEmailData);
         alert("Your email has been successfully submitted!");
       }
     } catch (error) {
@@ -58,11 +81,13 @@ export default function Header() {
     }
   }
 
+  // handling the submit form 
+
   function handleformSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     submitEmail();
     setEmail("");
-    setEmailData({ email: "", date: "" });
+    setEmailData({id:0, email: "", date: "" });
   }
 
   return (
@@ -87,7 +112,7 @@ export default function Header() {
           </label>
           <button
             type="submit"
-            className="my-4 text-white box flex justify-between items-center bg-green-dark px-8"
+            className="my-4 text-white box flex justify-between items-center bg-green-dark px-8 hover:bg-black-darkest"
           >
             <img src="../home/cup-icon.svg" alt="cup icon" />
             <p>

@@ -51,18 +51,32 @@
     @apply outline-2 outline outline-white/80
   }
   .table-heading th{
-    @apply px-4 pb-2 pt-5 text-left border-2 border-black-darkest font-semibold text-white/80 pl-5
+    @apply px-4 pb-2 pt-5 text-left font-semibold text-white/80 pl-5
+  }
+  tr{
+    @apply bg-black-dark
   }
   .table-data td{
-    @apply p-3 text-left border-2 border-black-darkest bg-black-dark text-white/80 font-light pl-5
+    @apply p-3 text-left text-white/80 font-light pl-5
   }
   .table-data td:first-child{
     @apply w-[15%]
   }
+  tbody tr{
+    @apply odd:bg-black-dark/80
+  }
   .number{
     @apply text-5xl text-white/80 mb-5;
   }
-
+  .adminLabel{
+    @apply max-w-full flex my-9 rounded-full p-4 font-medium text-slate-light box-border bg-slate-dark;
+  }
+  .adminInput{
+    @apply bg-transparent w-full outline-none  caret-white;
+  }
+  .showbtn:hover svg{
+    @apply fill-green-bright
+  }
   @screen sm{
     body{
       @apply text-base;
