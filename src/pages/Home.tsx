@@ -4,7 +4,7 @@ import Features from "../component/Features";
 
 export default function Home() {
   return (
-    <div>
+    <div> 
       <Header />
       <main>
         <article>
