@@ -61,7 +61,7 @@ export default function AdminEmailDashboard() {
 
 
   return (
-    <div className="containerPadding py-10 bg-black-darkest min-h-screen">
+    <div className="containerPadding py-10 bg-black-darkest min-h-screen md:w-screen w-fit">
       <h1 className="title">Emails</h1>
       <label
         htmlFor="search"

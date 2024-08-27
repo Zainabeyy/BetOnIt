@@ -33,7 +33,7 @@ export default function EmailsTable(props: data) {
   return (
     <table className="border-collapse w-full my-9 rounded-3xl overflow-hidden">
       <thead>
-        <tr className=" text-xl font-normal table-heading">
+        <tr className="text-base md:text-xl font-normal table-heading">
           <th>Email ID</th>
           <th>Emails</th>
           <th>Date</th>

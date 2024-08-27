@@ -57,7 +57,7 @@
     @apply bg-black-dark
   }
   .table-data td{
-    @apply p-3 text-left text-white/80 font-light pl-5
+    @apply p-3 text-left text-white/80 font-light pl-5 text-sm md:text-base
   }
   .table-data td:first-child{
     @apply w-[15%]
