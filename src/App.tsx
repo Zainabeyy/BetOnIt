@@ -25,7 +25,8 @@ function App() {
     return ()=> unsbscribe();
   })
   const location = window.location;
-  const hiddeNavFooter = location.pathname === "/email" || "/adminLogin";
+  const hiddeNavFooter = location.pathname === "/admin-dashboard" || location.pathname === "/adminLogin";
+  
   return (
     <div>
       <BrowserRouter>
